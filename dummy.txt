@@ -1,0 +1,1 @@
+Workaround for fatal: /usr/lib/git-core/git-subtree cannot be used without a working tree.
