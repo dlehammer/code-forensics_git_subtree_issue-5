@@ -1,0 +1,19 @@
+language: groovy
+sudo: false
+cache:
+  directories:
+  - "$HOME/.gradle"
+jdk:
+- openjdk7
+before_script:
+- rm -rf target
+script: ./travis-build.sh
+env:
+  global:
+  - GIT_NAME="James Kleeh"
+  - GIT_EMAIL="james.kleeh@gmail.com"
+  - secure: AnvOBpVNfRVX2TKXeNTJslb1Utf2PBo47CwdqRZKtwPNT3XP/M4mR/TqoUZ3UT0j8KYVsWfN2krPzcKfqTRIYrDchWtnEyL4H4XijHJeFBUORybOrNR2pmqefpxf6YV/yJp5cFbHVD+HDGFw7mHwuOw4pVZ43vhkMqkXLUoPq54=
+  - secure: rNzuTZqLywjNXZqknrfMfOKCfFaNkl1q9wExKKfHtCi9GWRqsQJ6gdxVCqzd15k/z/axwbzFKSjtRl3DIvzOjcZUNqYI5uBY3lvba21TjpxVaT2g9EwEhtGnvm2AA/SfaOMLFVjem4NVKGAckBFOQDM9ahfnC041QS+srBloQd8=
+  - secure: BdnsaqXq58dpE6u966tfj44WV9x+zeF7vhgWYFibYqLMFnTJn6GV/VDPP7Tak2IkQKgk6swJIDylS3GMu+upG6dgvV7T2rbVCNQey1lwNmRb9a+49CQF1ZY8/2SvVips8mYi6fofkBUH3nEXS9TdUs8BrIQQKTME0ifRlDyVb3Y=
+  - secure: BkICi+1VXP7ZmZg/1esJgfgNwpyOjz92e9uWK2c8rh2Kbh77IEhCR5KQNfbXzWzlwWJlwDT69UTFGIVskgUq1EdXSnZTCwA6StqCmvtiMc5Wkqz2n2yk7mo9FSYPjq3pg+Uf2/7ZOmvj+UD+fFs+jpPl7wD/n7/fEE++ATWDSVk=
+  - secure: OhSgf5zQ2agXr3unRTqwDneNsIjPwFzxt4H1m4q0GQukPg4dSJkUKsQhL9cEPuDo5TBsugd0G6DTFCunZBMUP928R3lVOtB7DcaiLjBfLosRmjJLIRnDjSHLAOOu9lKR/5f8AbcTjuPfMz1tPCuIhPqGXOXIT+w0pHRWXLhKzaM=
